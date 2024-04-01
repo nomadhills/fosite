@@ -15,11 +15,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/fosite"
-	. "github.com/ory/fosite"
-	"github.com/ory/fosite/compose"
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/storage"
+	"github.com/nomadhills/fosite"
+	. "github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/compose"
+	"github.com/nomadhills/fosite/internal"
+	"github.com/nomadhills/fosite/storage"
 )
 
 func TestIntrospectionResponseTokenUse(t *testing.T) {

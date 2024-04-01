@@ -6,7 +6,7 @@ package oauth2
 import (
 	"context"
 
-	"github.com/ory/fosite"
+	"github.com/nomadhills/fosite"
 )
 
 type CoreStrategy interface {

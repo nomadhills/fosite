@@ -84,16 +84,16 @@ you can do with Fosite and a few lines of code.
 You can run this minimalistic example by doing
 
 ```
-go get github.com/ory/fosite-example
-cd $GOPATH/src/github.com/ory/fosite-example
+go get github.com/nomadhills/fosite-example
+cd $GOPATH/src/github.com/nomadhills/fosite-example
 dep ensure
-go install github.com/ory/fosite-example
+go install github.com/nomadhills/fosite-example
 fosite-example
 ```
 
 There should be a server listening on [localhost:3846](https://localhost:3846/).
 You can check out the example's source code
-[here](https://github.com/ory/fosite-example/).
+[here](https://github.com/nomadhills/fosite-example/).
 
 ## A word on quality
 
@@ -149,7 +149,7 @@ Additionally, we added these safeguards:
 Sections below [Section 5](https://tools.ietf.org/html/rfc6819#section-5) that
 are not covered in the list above should be reviewed by you. If you think that a
 specific section should be something that is covered in Fosite, feel free to
-create an [issue](https://github.com/ory/fosite/issues). Please be aware that
+create an [issue](https://github.com/nomadhills/fosite/issues). Please be aware that
 OpenID Connect requires specific knowledge of the identity provider, which is
 why Fosite only implements core requirements and most things must be implemented
 by you (for example prompt, max_age, ui_locales, id_token_hint, user
@@ -174,7 +174,7 @@ secure. ;)
 required that you have set up your GOPATH environment variable.
 
 ```
-go get -u github.com/ory/fosite/...
+go get -u github.com/nomadhills/fosite/...
 ```
 
 We recommend to use [dep](https://github.com/golang/dep) to mitigate
@@ -183,7 +183,7 @@ compatibility breaks that come with new api versions.
 ## Documentation
 
 There is an API documentation available at
-[godoc.org/ory/fosite](https://godoc.org/github.com/ory/fosite).
+[godoc.org/ory/fosite](https://godoc.org/github.com/nomadhills/fosite).
 
 ### Scopes
 
@@ -193,7 +193,7 @@ scope strategy if you need a custom one by implementing `fosite.ScopeStrategy`.
 Using the composer, setting a strategy is easy:
 
 ```go
-import "github.com/ory/fosite"
+import "github.com/nomadhills/fosite"
 
 var config = &fosite.Config{
 ScopeStrategy: fosite.HierarchicScopeStrategy,
@@ -285,16 +285,16 @@ strongly encouraged to use these well tested composers.
 
 In this very basic example, we will instantiate fosite with all OpenID Connect
 and OAuth2 handlers enabled. Please refer to the
-[example app](https://github.com/ory/fosite-example/) for more details.
+[example app](https://github.com/nomadhills/fosite-example/) for more details.
 
 This little code snippet sets up a full-blown OAuth2 and OpenID Connect example.
 
 ```go
 package main
 
-import "github.com/ory/fosite"
-import "github.com/ory/fosite/compose"
-import "github.com/ory/fosite/storage"
+import "github.com/nomadhills/fosite"
+import "github.com/nomadhills/fosite/compose"
+import "github.com/nomadhills/fosite/storage"
 
 // This is the example storage that contains:
 // * an OAuth2 Client with id "my-client" and secrets "foobar" and "foobaz" capable of all oauth2 and open id connect grant and response types.
@@ -432,7 +432,7 @@ func someResourceProviderHandlerFunc(rw http.ResponseWriter, req *http.Request) 
 Fosite provides integration tests as well as a http server example:
 
 - Fosite ships with an example app that runs in your browser:
-  [Example app](https://github.com/ory/fosite-example/).
+  [Example app](https://github.com/nomadhills/fosite-example/).
 - If you want to check out how to enable specific handlers, check out the
   [integration tests](integration/).
 
@@ -475,8 +475,8 @@ token revocation is not possible.
 You need git and golang installed on your system.
 
 ```
-go get -d github.com/ory/fosite
-cd $GOPATH/src/github.com/ory/fosite
+go get -d github.com/nomadhills/fosite
+cd $GOPATH/src/github.com/nomadhills/fosite
 git status
 git remote add myfork <url-to-your-fork>
 go test ./...
@@ -497,23 +497,23 @@ This place is reserved for the fearless bug hunters, reviewers and contributors
 (alphabetical order).
 
 - [agtorre](https://github.com/agtorre):
-  [contributions](https://github.com/ory/fosite/issues?q=author%3Aagtorre),
-  [participations](https://github.com/ory/fosite/issues?q=commenter%3Aagtorre).
+  [contributions](https://github.com/nomadhills/fosite/issues?q=author%3Aagtorre),
+  [participations](https://github.com/nomadhills/fosite/issues?q=commenter%3Aagtorre).
 - [danielchatfield](https://github.com/danielchatfield):
-  [contributions](https://github.com/ory/fosite/issues?q=author%3Adanielchatfield),
-  [participations](https://github.com/ory/fosite/issues?q=commenter%3Adanielchatfield).
+  [contributions](https://github.com/nomadhills/fosite/issues?q=author%3Adanielchatfield),
+  [participations](https://github.com/nomadhills/fosite/issues?q=commenter%3Adanielchatfield).
 - [leetal](https://github.com/leetal):
-  [contributions](https://github.com/ory/fosite/issues?q=author%3Aleetal),
-  [participations](https://github.com/ory/fosite/issues?q=commenter%3Aleetal).
+  [contributions](https://github.com/nomadhills/fosite/issues?q=author%3Aleetal),
+  [participations](https://github.com/nomadhills/fosite/issues?q=commenter%3Aleetal).
 - [jrossiter](https://github.com/jrossiter):
-  [contributions](https://github.com/ory/fosite/issues?q=author%3Ajrossiter),
-  [participations](https://github.com/ory/fosite/issues?q=commenter%3Ajrossiter).
+  [contributions](https://github.com/nomadhills/fosite/issues?q=author%3Ajrossiter),
+  [participations](https://github.com/nomadhills/fosite/issues?q=commenter%3Ajrossiter).
 - [jrossiter](https://github.com/jrossiter):
-  [contributions](https://github.com/ory/fosite/issues?q=author%3Ajrossiter),
-  [participations](https://github.com/ory/fosite/issues?q=commenter%3Ajrossiter).
+  [contributions](https://github.com/nomadhills/fosite/issues?q=author%3Ajrossiter),
+  [participations](https://github.com/nomadhills/fosite/issues?q=commenter%3Ajrossiter).
 - [danilobuerger](https://github.com/danilobuerger):
-  [contributions](https://github.com/ory/fosite/issues?q=author%3Adanilobuerger),
-  [participations](https://github.com/ory/fosite/issues?q=commenter%3Adanilobuerger).
+  [contributions](https://github.com/nomadhills/fosite/issues?q=author%3Adanilobuerger),
+  [participations](https://github.com/nomadhills/fosite/issues?q=commenter%3Adanilobuerger).
 
 Find out more about the [author](https://aeneas.io/) of Fosite and Hydra, and
 the [Ory Company](https://ory.am/).

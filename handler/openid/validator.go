@@ -13,8 +13,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/token/jwt"
 	"github.com/ory/go-convenience/stringslice"
 )
 

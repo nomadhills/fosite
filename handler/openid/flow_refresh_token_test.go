@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/internal"
+	"github.com/nomadhills/fosite/token/jwt"
 )
 
 func TestOpenIDConnectRefreshHandler_HandleTokenEndpointRequest(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/ory/fosite
+module github.com/nomadhills/fosite
 
 replace github.com/dgrijalva/jwt-go => github.com/form3tech-oss/jwt-go v3.2.1+incompatible
 

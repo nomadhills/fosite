@@ -10,8 +10,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/token/hmac"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/token/hmac"
 	"github.com/ory/x/errorsx"
 )
 

@@ -11,8 +11,8 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/internal"
 )
 
 type mockNonceManager struct{ t *testing.T }

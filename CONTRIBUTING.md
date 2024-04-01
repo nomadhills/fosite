@@ -49,7 +49,7 @@ or the [Ory Chat](https://www.ory.sh/chat).
 ## FAQ
 
 - I am new to the community. Where can I find the
-  [Ory Community Code of Conduct?](https://github.com/ory/fosite/blob/master/CODE_OF_CONDUCT.md)
+  [Ory Community Code of Conduct?](https://github.com/nomadhills/fosite/blob/master/CODE_OF_CONDUCT.md)
 
 - I have a question. Where can I get
   [answers to questions regarding Ory Fosite?](#communication)
@@ -72,7 +72,7 @@ or the [Ory Chat](https://www.ory.sh/chat).
 ## How can I contribute?
 
 If you want to start to contribute code right away, take a look at the
-[list of good first issues](https://github.com/ory/fosite/labels/good%20first%20issue).
+[list of good first issues](https://github.com/nomadhills/fosite/labels/good%20first%20issue).
 
 There are many other ways you can contribute. Here are a few things you can do
 to help out:
@@ -146,7 +146,7 @@ checklist to contribute an example:
    not get mixed up.
 1. Add a descriptive prefix to commits. This ensures a uniform commit history
    and helps structure the changelog. Please refer to this
-   [list of prefixes for Fosite](https://github.com/ory/fosite/blob/master/.github/semantic.yml)
+   [list of prefixes for Fosite](https://github.com/nomadhills/fosite/blob/master/.github/semantic.yml)
    for an overview.
 1. Create a `README.md` that explains how to use the example. (Use
    [the README template](https://github.com/ory/examples/blob/master/_common/README)).
@@ -174,7 +174,7 @@ request, go through this checklist:
 1. Run `make format`
 1. Add a descriptive prefix to commits. This ensures a uniform commit history
    and helps structure the changelog. Please refer to this
-   [list of prefixes for Fosite](https://github.com/ory/fosite/blob/master/.github/semantic.yml)
+   [list of prefixes for Fosite](https://github.com/nomadhills/fosite/blob/master/.github/semantic.yml)
    for an overview.
 
 If a pull request is not ready to be reviewed yet
@@ -260,7 +260,7 @@ Now go to the project's GitHub Pull Request page and click "New pull request"
 Whether you are a regular contributor or a newcomer, we care about making this
 community a safe place for you and we've got your back.
 
-[Ory Community Code of Conduct](https://github.com/ory/fosite/blob/master/CODE_OF_CONDUCT.md)
+[Ory Community Code of Conduct](https://github.com/nomadhills/fosite/blob/master/CODE_OF_CONDUCT.md)
 
 We welcome discussion about creating a welcoming, safe, and productive
 environment for the community. If you have any questions, feedback, or concerns

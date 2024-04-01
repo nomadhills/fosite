@@ -13,8 +13,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/storage"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/storage"
 )
 
 func parseUrl(uu string) *url.URL {

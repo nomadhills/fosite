@@ -10,16 +10,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/internal/gen"
+	"github.com/nomadhills/fosite/internal"
+	"github.com/nomadhills/fosite/internal/gen"
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/handler/oauth2"
-	"github.com/ory/fosite/storage"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/handler/oauth2"
+	"github.com/nomadhills/fosite/storage"
+	"github.com/nomadhills/fosite/token/jwt"
 )
 
 func makeOpenIDConnectImplicitHandler(minParameterEntropy int) OpenIDConnectImplicitHandler {

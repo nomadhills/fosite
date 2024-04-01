@@ -15,8 +15,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/internal"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/internal"
 )
 
 func TestAuthorizeImplicit_EndpointHandler(t *testing.T) {

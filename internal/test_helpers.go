@@ -18,7 +18,7 @@ import (
 	"golang.org/x/net/html"
 	goauth "golang.org/x/oauth2"
 
-	"github.com/ory/fosite"
+	"github.com/nomadhills/fosite"
 )
 
 func ptr(d time.Duration) *time.Duration {

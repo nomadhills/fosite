@@ -141,7 +141,7 @@ This release makes it easier to define custom JWT Containers for access tokens
 when using the JWT strategy. To do that, the following signatures have changed:
 
 ```go
-// github.com/ory/fosite/handler/oauth2
+// github.com/nomadhills/fosite/handler/oauth2
 type JWTSessionContainer interface {
 	// GetJWTClaims returns the claims.
 -	GetJWTClaims() *jwt.JWTClaims
@@ -181,7 +181,7 @@ down the call path properly.
 #### `fosite/handler/oauth2.JWTStrategy`
 
 The
-[`fosite/handler/oauth2.JWTStrategy`](https://github.com/ory/fosite/blob/master/handler/oauth2/strategy.go)
+[`fosite/handler/oauth2.JWTStrategy`](https://github.com/nomadhills/fosite/blob/master/handler/oauth2/strategy.go)
 interface changed as a context parameter was added to its method signature:
 
 ```go
@@ -194,7 +194,7 @@ type JWTStrategy interface {
 #### `OpenIDConnectRequestValidator.ValidatePrompt`
 
 The
-[`OpenIDConnectRequestValidator.ValidatePrompt`](https://github.com/ory/fosite/blob/master/handler/openid/validator.go)
+[`OpenIDConnectRequestValidator.ValidatePrompt`](https://github.com/nomadhills/fosite/blob/master/handler/openid/validator.go)
 method signature was updated to take a go context as its first parameter:
 
 ```go
@@ -211,7 +211,7 @@ passing in the go context to their signatures.
 
 #### `Hasher`
 
-The [`Hasher`](https://github.com/ory/fosite/blob/master/hash.go) interface
+The [`Hasher`](https://github.com/nomadhills/fosite/blob/master/hash.go) interface
 changed as a context parameter was added to its method signatures:
 
 ```go
@@ -232,7 +232,7 @@ passing in the go context to their signatures.
 
 #### `JWTStrategy`
 
-The [`JWTStrategy`](https://github.com/ory/fosite/blob/master/token/jwt/jwt.go)
+The [`JWTStrategy`](https://github.com/nomadhills/fosite/blob/master/token/jwt/jwt.go)
 interface changed as a context parameter was added to its method signatures:
 
 ```go
@@ -334,9 +334,9 @@ than one time.
 
 ### JWT Claims
 
-- `github.com/ory/fosite/token/jwt.JWTClaims.Audience` is no longer a `string`,
+- `github.com/nomadhills/fosite/token/jwt.JWTClaims.Audience` is no longer a `string`,
   but a string slice `[]string`.
-- `github.com/ory/fosite/handler/openid.IDTokenClaims` is no longer a `string`,
+- `github.com/nomadhills/fosite/handler/openid.IDTokenClaims` is no longer a `string`,
   but a string slice `[]string`.
 
 ### `AuthorizeCodeStorage`
@@ -344,14 +344,14 @@ than one time.
 This improves security as, in the event of an authorization code being leaked,
 all associated tokens are revoked. To implement this feature, a breaking change
 had to be introduced. The
-`github.com/ory/fosite/handler/oauth2.AuthorizeCodeStorage` interface changed as
+`github.com/nomadhills/fosite/handler/oauth2.AuthorizeCodeStorage` interface changed as
 follows:
 
 - `DeleteAuthorizeCodeSession(ctx context.Context, code string) (err error)` has
   been removed from the interface and is no longer used by this library.
 - `InvalidateAuthorizeCodeSession(ctx context.Context, code string) (err error)`
   has been introduced.
-- The error `github.com/ory/fosite/handler/oauth2.ErrInvalidatedAuthorizeCode`
+- The error `github.com/nomadhills/fosite/handler/oauth2.ErrInvalidatedAuthorizeCode`
   has been added.
 
 The following documentation sheds light on how you should update your storage
@@ -465,7 +465,7 @@ false. Keep in mind that the information may be very helpful when specific OAuth
 
 Additionally, error keys for JSON changed which caused a new minor version,
 speicifically
-[`statusCode` was changed to `status_code`](https://github.com/ory/fosite/pull/242/files#diff-dd25e0e0a594c3f3592c1c717039b85eR221).
+[`statusCode` was changed to `status_code`](https://github.com/nomadhills/fosite/pull/242/files#diff-dd25e0e0a594c3f3592c1c717039b85eR221).
 
 ## 0.15.0
 
@@ -548,12 +548,12 @@ references to `AuthorizeCodeGrantStorage` with `CoreStorage`.
 
 #### WildcardScopeStrategy
 
-A new [scope strategy](https://github.com/ory/fosite/pull/187) was introduced
+A new [scope strategy](https://github.com/nomadhills/fosite/pull/187) was introduced
 called `WildcardScopeStrategy`. This strategy is now the default when using the
 composer. To set the HierarchicScopeStrategy strategy, do:
 
 ```
-import "github.com/ory/fosite/compose"
+import "github.com/nomadhills/fosite/compose"
 
 var config = &compose.Config{
     ScopeStrategy: fosite.HierarchicScopeStrategy,
@@ -632,7 +632,7 @@ updated to `ory/fosite`.
 #### `ClientManager`
 
 The
-[`ClientManager`](https://github.com/ory/fosite/blob/master/client_manager.go)
+[`ClientManager`](https://github.com/nomadhills/fosite/blob/master/client_manager.go)
 interface changed, as a context parameter was added:
 
 ```go
@@ -646,7 +646,7 @@ type ClientManager interface {
 
 #### `OAuth2Provider`
 
-The [OAuth2Provider](https://github.com/ory/fosite/blob/master/oauth2.go)
+The [OAuth2Provider](https://github.com/nomadhills/fosite/blob/master/oauth2.go)
 interface changed, as the need for passing down `*http.Request` was removed.
 This is justifiable because `NewAuthorizeRequest` and `NewAccessRequest` already
 contain `*http.Request`.
@@ -667,7 +667,7 @@ The public api of those two methods changed:
 Breaking changes:
 
 - Replaced `"golang.org/x/net/context"` with `"context"`.
-- Move the repo from `github.com/ory-am/fosite` to `github.com/ory/fosite`
+- Move the repo from `github.com/ory-am/fosite` to `github.com/nomadhills/fosite`
 
 ## 0.6.0
 

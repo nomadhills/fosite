@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	. "github.com/ory/fosite"
+	. "github.com/nomadhills/fosite"
 )
 
 func TestAccessResponse(t *testing.T) {

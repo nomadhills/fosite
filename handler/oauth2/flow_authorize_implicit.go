@@ -11,7 +11,7 @@ import (
 
 	"github.com/ory/x/errorsx"
 
-	"github.com/ory/fosite"
+	"github.com/nomadhills/fosite"
 )
 
 var _ fosite.AuthorizeEndpointHandler = (*AuthorizeImplicitGrantTypeHandler)(nil)

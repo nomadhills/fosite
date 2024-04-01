@@ -11,8 +11,8 @@ import (
 
 	"github.com/ory/x/errorsx"
 
-	"github.com/ory/fosite"
-	enigma "github.com/ory/fosite/token/hmac"
+	"github.com/nomadhills/fosite"
+	enigma "github.com/nomadhills/fosite/token/hmac"
 )
 
 type HMACSHAStrategy struct {

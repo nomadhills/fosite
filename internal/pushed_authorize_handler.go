@@ -9,7 +9,7 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/ory/fosite"
+	"github.com/nomadhills/fosite"
 )
 
 // MockPushedAuthorizeEndpointHandler is a mock of PushedAuthorizeEndpointHandler interface

@@ -11,19 +11,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ory/fosite/internal"
-	"github.com/ory/fosite/internal/gen"
+	"github.com/nomadhills/fosite/internal"
+	"github.com/nomadhills/fosite/internal/gen"
 
 	cristaljwt "github.com/cristalhq/jwt/v4"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ory/fosite"
-	"github.com/ory/fosite/handler/oauth2"
-	"github.com/ory/fosite/storage"
-	"github.com/ory/fosite/token/hmac"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/nomadhills/fosite"
+	"github.com/nomadhills/fosite/handler/oauth2"
+	"github.com/nomadhills/fosite/storage"
+	"github.com/nomadhills/fosite/token/hmac"
+	"github.com/nomadhills/fosite/token/jwt"
 )
 
 var hmacStrategy = &oauth2.HMACSHAStrategy{

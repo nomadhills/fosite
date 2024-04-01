@@ -14,7 +14,7 @@ import (
 )
 
 func (f *Fosite) NewAuthorizeResponse(ctx context.Context, ar AuthorizeRequester, session Session) (_ AuthorizeResponder, err error) {
-	ctx, span := trace.SpanFromContext(ctx).TracerProvider().Tracer("github.com/ory/fosite").Start(ctx, "Fosite.NewAuthorizeResponse")
+	ctx, span := trace.SpanFromContext(ctx).TracerProvider().Tracer("github.com/nomadhills/fosite").Start(ctx, "Fosite.NewAuthorizeResponse")
 	defer otelx.End(span, &err)
 
 	var resp = &AuthorizeResponse{

@@ -12,8 +12,8 @@ import (
 
 	"github.com/hashicorp/go-retryablehttp"
 
-	"github.com/ory/fosite/i18n"
-	"github.com/ory/fosite/token/jwt"
+	"github.com/nomadhills/fosite/i18n"
+	"github.com/nomadhills/fosite/token/jwt"
 )
 
 // AuthorizeCodeLifespanProvider returns the provider for configuring the authorization code lifespan.

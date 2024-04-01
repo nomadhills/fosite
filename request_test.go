@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	. "github.com/ory/fosite"
+	. "github.com/nomadhills/fosite"
 )
 
 func TestRequest(t *testing.T) {
